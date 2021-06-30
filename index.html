@@ -8,17 +8,37 @@
     <!--font awesome cdn-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--bootstrap4 cdn-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <style>
         .bg-color-ab{
             background-color: rgba(170, 177, 185, 0.555);
+        }
+        .my-style-link:hover{
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container" >
-        <header class="bg-primary text-white py-3 text-center">
-            <h1>Maruf Bin Solaiman</h1>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+
+
+                <a href="#" class="navbar-brand">
+                    <img src="http://codeforces.org/s/32005/images/codeforces-logo-with-telegram.png" alt="logo" style="width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item active"><a class="nav-link" href="#">Mujahid</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ahal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Jillu</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
 
         <main>
@@ -54,17 +74,28 @@
 
                     <!--about me-->
                 <div class="about-section">
-                    <div class="jumbotron ">
+                    <div class="jumbotron bg-secondary">
                         <div class="title text-center mb-3">
                             <h3 class="font-weight-bolder">About Me</h3>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4 text-center">
+                            <div class="col-lg-4">
                                 <img class="rounded-circle img-fluid" src="maruf.jpg" alt="">
                             </div>
-                            <div class="col-lg-8">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod laborum deserunt ea dolorum? Maxime, eligendi consectetur aperiam blanditiis facere sapiente tempora facilis quasi voluptatem ex exercitationem, in rem tenetur perferendis fuga nulla suscipit? Architecto quas eum facilis velit perspiciatis consectetur magni accusantium maxime quisquam autem voluptas sapiente, aliquid reprehenderit, explicabo eligendi reiciendis temporibus quae. Impedit expedita in ex dignissimos, voluptates mollitia reprehenderit, maiores magnam, harum ad et quibusdam aspernatur natus saepe? Dolor itaque aliquid assumenda. Possimus, a quo nobis doloribus rem vitae fuga obcaecati alias velit aperiam, enim corporis ipsa modi quod, nostrum laborum repellendus eos voluptatem iste sed.</p>
-                            
+                            <div class="col-lg-8 text-sm-center">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                
+                                <a href="#demo" data-toggle="collapse">read more</a>
+                                
+                                <div id="demo"class="collapse">
+                                    <p>Doloribus quod laborum deserunt ea dolorum? Maxime, eligendi consectetur aperiam blanditiis facere sapiente tempora facilis quasi voluptatem ex exercitationem, in rem tenetur perferendis fuga nulla suscipit? Architecto quas eum facilis velit perspiciatis consectetur magni accusantium maxime quisquam autem voluptas sapiente, aliquid reprehenderit, explicabo eligendi reiciendis temporibus quae. Impedit expedita in ex dignissimos, voluptates mollitia reprehenderit, maiores magnam, harum ad et quibusdam aspernatur natus saepe? Dolor itaque aliquid assumenda. Possimus, a quo nobis doloribus rem vitae fuga obcaecati alias velit aperiam, enim corporis ipsa modi quod, nostrum laborum repellendus eos voluptatem iste sed.</p>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button class="btn btn-primary btn-sm mb-3">more</button>
+                                    <button class="btn btn-primary btn-sm mb-3">more</button>
+                                    <a class="btn btn-success btn-sm mb-3" href="#">visit here</a>
+                                </div>
                             
                                 <div class="alert alert-success arelt-dismissible">
                                     <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -76,14 +107,218 @@
                 </div>
 
             </div>
+            <!-- about me ends here -->
+
+            <!-- table section start here -->
+
+            <div class="table-section">
+                <div class="title text-center my-3">
+                    <h3 class="font-weight-bolder">Education</h3>
+                </div>
+                <table class="table table-bordered text-center table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Qualification</th>
+                            <th>Institution</th>
+                            <th>Year</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dakhil</td>
+                            <td>Baitush Sharaf</td>
+                            <td>2014</td>
+                            <td>4.81/5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alim</td>
+                            <td>Darul Ulum</td>
+                            <td>2016</td>
+                            <td>4.63/5.00</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc</td>
+                            <td>University of Chittagong</td>
+                            <td>2017</td>
+                            <td>Running</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- table section end here -->
+
+
+            <!-- Toturial section start here -->
+
+            <div class="tutorial-section mt-3">
+                <div class="title text-center my-3">
+                    <h3 class="font-weight-bolder">Card Sample</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="maruf.jpg" alt="Maruf">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Maruf Bin Solaiman</h5>
+                                <p class="card-text">Student of the university of chittagong</p>
+                                <a class="card-link stretched-link" style="text-decoration: none;" href="#">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="maruf.jpg" alt="Maruf">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Maruf Bin Solaiman</h5>
+                                <p class="card-text">Student of the university of chittagong</p>
+                                <a class="card-link stretched-link" style="text-decoration: none;" href="#">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="maruf.jpg" alt="Maruf">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Maruf Bin Solaiman</h5>
+                                <p class="card-text">Student of the university of chittagong</p>
+                                <a class="card-link stretched-link" style="text-decoration: none;" href="#">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="maruf.jpg" alt="Maruf">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Maruf Bin Solaiman</h5>
+                                <p class="card-text">Student of the university of chittagong</p>
+                                <a class="card-link stretched-link" style="text-decoration: none;" href="#">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--customar review section-->
+            <div class="customar-review bg-light text-center p-3">
+                <div class="title mb-3">
+                    <h3 class="font-weight-bolder">Customar Review</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <blockquote class="blockquote ">
+                            <i class="fas fa-user-circle fa-5x p-2"></i>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam iure eveniet nostrum, rem repellat.in this website we can learn <abbr title="Bootsrtap 4">bs4</abbr> </p>
+                            <footer class="blockquote-footer">
+                                Maruf in <cite>Facebook</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <blockquote class="blockquote ">
+                            <i class="fas fa-user-circle fa-5x p-2"></i>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam iure eveniet nostrum, rem repellat.in this website we can learn <abbr title="Bootsrtap 4">bs4</abbr> </p>
+                            <footer class="blockquote-footer">
+                                Maruf in <cite>Facebook</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <blockquote class="blockquote ">
+                            <i class="fas fa-user-circle fa-5x p-2"></i>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsam iure eveniet nostrum, rem repellat.in this website we can learn <abbr title="Bootsrtap 4">bs4</abbr> </p>
+                            <footer class="blockquote-footer">
+                                Maruf in <cite>Facebook</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                </div>
+            </div>
+            <!--customar review end here section-->
+
+            <!-- toggolable dynamic tab start here -->
+            <div class="other-section">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a data-toggle="pill" class="nav-link active" href="#ban"></a>Bandarban</li>
+                    <li class="nav-item"><a data-toggle="pill" class="nav-link" href="#cox"></a>Coxbazar</li>
+                    <li class="nav-item"><a data-toggle="pill" class="nav-link" href="#ran"></a>Rangamati</li>
+                </ul>
+                <div class="tab-content">
+                    <div id="ban" class="tab-pane active">Bandarban is a city with high mountain and lakes everyware. I never visit Bandarban</div>
+                    <div id="cox" class="tab-pane fade">Coxbazar is the world's largest sea beach. I have visited coxbazar saverel times. I enjoyed spend time at the beach in night with my friends</div>
+                    <div id="ran" class="tab-pane fade">Rangamati is a high hill area where many tourist visit to see the nature of mountain and lakes. although i have'nt visited Rangamati yet.</div>
+                </div>
+            </div>
+            <!-- toggolable dynamic tab and pill end here -->
+
+            <!-- media section starts here -->
+
+            <div class="media-section">
+                <div class="title mb-3 text-center">
+                    <h3 class="font-weight-bolder">My blogs</h3>
+                </div>
+
+                <div class="media border p-3 my-3">
+                    <img style="width: 80px;" class="rounded-circle mr-3 align-self-center" src="maruf.jpg"  alt="Maruf">
+                    <div class="media-body">
+                        <h5>I love watching movies</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam praesentium quia fugiat mollitia sint laudantium excepturi quibusdam cumque atque.</p>
+                    </div>
+                </div>
+                <div class="media border p-3 my-3">
+                    
+                    <div class="media-body">
+                        <h5>I love watching movies</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam praesentium quia fugiat mollitia sint laudantium excepturi quibusdam cumque atque.</p>
+                    </div>
+                    <img style="width: 80px;" class="rounded-circle mr-3 align-self-center" src="maruf.jpg"  alt="Maruf">
+                </div>
+                <div class="media border p-3 my-3">
+                    <img style="width: 80px;" class="rounded-circle mr-3 align-self-center" src="maruf.jpg"  alt="Maruf">
+                    <div class="media-body">
+                        <h5>I love watching movies</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam praesentium quia fugiat mollitia sint laudantium excepturi quibusdam cumque atque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, obcaecati deleniti veritatis dolores iure adipisci impedit. Dolorum illo nemo facilis libero optio repellat itaque omnis minima atque? Esse fuga perferendis dolorem, blanditiis, quisquam voluptatem a dolore hic ratione in eum accusamus aut quas reprehenderit possimus nulla veritatis unde ex velit animi alias rem. Iusto nesciunt ratione, soluta incidunt, molestiae quod veritatis magnam eos sapiente reiciendis minus eius, maxime vero laboriosam quia. Voluptatem ducimus earum recusandae fugiat exercitationem saepe molestias quae dicta ex, dolores labore, accusantium, quasi eligendi minus a omnis ratione accusamus autem. Praesentium, ducimus vel reprehenderit consequuntur itaque accusantium!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--student list section starts here-->
+            <div class="student-list text-center">
+                <ul class="list-group">
+                    <li class="list-group-item bg-primary text-white">Maruf Bin</li>
+                    <li class="list-group-item bg-primary text-white">Halima Sadia</li>
+                    <li class="list-group-item bg-primary text-white">Faria Meem</li>
+                    <a class="list-group-item list-group-item-action" href="#">Fabiha</a>
+                </ul>
+            </div>
+
+
         </main>
     
-        <footer class="text-center">
-            © Copyright all right reserved
+        <footer class="bg-dark">
+            <ul class="pagination py-3 text-primary justify-content-center">
+                <li class="page-item"><a class="page-link" href="#"></a>1</li>
+                <li class="page-item"><a class="page-link" href="#"></a>2</li>
+                <li class="page-item"><a class="page-link" href="#"></a>3</li>
+                <li class="page-item"><a class="page-link" href="#"></a>4</li>
+            </ul>
+            
         </footer>
     </div>
 
     <!--bootstrap js, jquery, popper-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
